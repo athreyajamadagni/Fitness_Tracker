@@ -50,4 +50,23 @@ It reads the text from the image captured and converts it into a string
 
 When you scan your id card it reads all the text available in the image, converts it to a string and only extracts the required text (the SRN, here is the string starting with PES, change it to what ever sequence your ID cards starts with) from it. The line extracted is sent to the database.
 
+For the Squat Counter of this project 
 
+
+
+
+For the website part of the project we will be using Python flask and heroku.
+
+Flask is a web application framework written in Python.
+
+Heroku is a cloud platform as a service supporting several programming languages.
+
+Follow these references to get started with flask and heroku
+
+Flask:
+
+https://www.youtube.com/watch?v=mqhxxeeTbu0&list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX&index=1&ab_channel=TechWithTim
+
+Heroku with flask:
+
+https://www.youtube.com/watch?v=23sp3cj5Pnc&ab_channel=ProgrammingKnowledge
