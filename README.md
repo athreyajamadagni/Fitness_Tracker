@@ -70,3 +70,20 @@ https://www.youtube.com/watch?v=mqhxxeeTbu0&list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5E
 Heroku with flask:
 
 https://www.youtube.com/watch?v=23sp3cj5Pnc&ab_channel=ProgrammingKnowledge
+
+
+How to go about the project:
+
+After running the code, hold 2 fingers up to intitate the ID card scanning process, if the ID card is not read successfully it will try to scan again, this happens for 3 times and if it fails all 3 times you have to hold up 2 fingers again to initiate the ID card scanning process.
+
+Once the roll number is read correctly, the squat tracker begings. Squat with a proper form to add to the count of the number of squats performed. If no squat is detected in 15seconds then the counter automatically terminates.
+
+This data (roll number and number of squats performed) is fed to the database. If the roll number does not already exist then it will create a new entry, if it already exists then it updated.
+
+Then a tkinter window shows up with the Roll Number , number of squats perfomred in that session and the total number of squats that is linked to that roll number.
+
+The window automatically closes after 8 seconds and it goes to the beginning to start a new session where you have to hold up 2 fingers to start the ID card scan process.
+
+Any person can view their total number of squats that they have performed by visiting :
+
+https://pesufitness-squat.herokuapp.com/
