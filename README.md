@@ -52,7 +52,18 @@ When you scan your id card it reads all the text available in the image, convert
 
 For the Squat Counter of this project 
 
+You will need:
+OpenCv : pip install opencv-python / sudo pip install opencv-python
 
+MediaPipe : sudo pip3 install mediapipe-rpi4
+
+This code captures a real time video stream from the pi camera, which is then converted from BGR to RGB format. The mediapipe pose estimation model then detects the person, draws these detections on the image and connects all the detections using the drawing utilities. The IDs and coordinates of all these detections are stored. 
+
+The pose landmarks are shown below:
+
+
+
+Using the coordinates and landmarks of the knees and hip, we calculate their relative distance to determine if the person is doing the squat properly, and increase the count of squats accordingly. So, if the hip is at the same level as knees or below them, we will set the stage as ‘Down’ and when the hip is above the knees, the stage will change to ‘Up’ and it will be counted as one squat.If the person does not squat for a certain time, the code terminates automatically.
 
 
 For the website part of the project we will be using Python flask and heroku.
@@ -70,6 +81,16 @@ https://www.youtube.com/watch?v=mqhxxeeTbu0&list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5E
 Heroku with flask:
 
 https://www.youtube.com/watch?v=23sp3cj5Pnc&ab_channel=ProgrammingKnowledge
+
+To setup your raspberry pi for this project, follow the steps mentioned in these videos:
+https://youtu.be/00c2GTpRaU8
+
+https://youtu.be/mlwEJkrHBL8
+
+Components used:
+1.Raspberry pi 4
+
+2.Pi camera
 
 
 How to go about the project:
