@@ -93,6 +93,14 @@ Components used:
 
 2.Pi camera
 
+To auto start the Terminal on the Pi:
+
+https://www.makeuseof.com/how-to-run-a-raspberry-pi-program-script-at-startup/
+
+To auto run a script:
+
+https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/
+
 
 How to go about the project:
 
