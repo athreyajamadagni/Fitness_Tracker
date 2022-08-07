@@ -61,6 +61,7 @@ This code captures a real time video stream from the pi camera, which is then co
 
 The pose landmarks are shown below:
 
+![image](https://user-images.githubusercontent.com/75878205/183298255-d22839c4-ea5a-42d9-8d3a-d844420dcd85.png)
 
 
 Using the coordinates and landmarks of the knees and hip, we calculate their relative distance to determine if the person is doing the squat properly, and increase the count of squats accordingly. So, if the hip is at the same level as knees or below them, we will set the stage as ‘Down’ and when the hip is above the knees, the stage will change to ‘Up’ and it will be counted as one squat.If the person does not squat for a certain time, the code terminates automatically.
@@ -108,3 +109,5 @@ The window automatically closes after 8 seconds and it goes to the beginning to 
 Any person can view their total number of squats that they have performed by visiting :
 
 https://pesufitness-squat.herokuapp.com/
+
+But this will change for your project.
